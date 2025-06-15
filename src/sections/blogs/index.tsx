@@ -6,10 +6,10 @@ import { hiddenVisible, slideInLeftInView } from "@/components/custom/Animations
 
 const Blog = () => {
   return (
-    <section className="max-width mx-auto padding-top" id="blogs">
+    <section className="section" id="blogs">
         <SeeMore
         title="Resources Blog & news"
-        content="Start working with Tailwindcss It allows you to compose complex designs by combining and customizing utility classes.."
+        content="Explore our blog to deepen your understanding of NFTs and digital ownership.From how-tos to market trends, it’s your go-to source for learning and inspiration ..."
         btnText="See All"
         path="#"
         />

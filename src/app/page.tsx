@@ -1,9 +1,9 @@
-import Hero from "@/components/custom/Hero";
-import Categories from "./categories/page";
-import Sellers from "./sellers/page";
-import Showcase from "./showcase/page";
-import Faqs from "./faqs/page";
-import Blog from "./blog/page";
+import Hero from "@/sections/Hero";
+import Categories from "../sections/categories";
+import Sellers from "../sections/sellers";
+import Showcase from "../sections/showcase";
+import Faqs from "../sections/faqs";
+import Blog from "../sections/blogs";
 
 export default function Home() {
   return (

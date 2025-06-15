@@ -7,20 +7,19 @@ import { hiddenVisible, slideInY } from "@/components/custom/Animations";
 
 const Categories: React.FC = () => {
   return (
-    <section className="padding-top max-width mx-auto" id="categories">
+    <section className="section" id="categories">
       <SeeMore
         title="Trending Categories"
-        content="  Start working with Tailwindcss It allows you to compose complex
-            designs by combining and customizing utility classes.."
+        content="Stay in the loop with the most talked-about NFT categories.Whether you're browsing or buying, these categories are where the action is happening ..."
         btnText="See More"
         path="#"
       />
       <motion.div
         className="grid-columns-4 gap padding-top"
-  initial={hiddenVisible.initial}
-  whileInView={hiddenVisible.whileInView}
-  viewport={hiddenVisible.viewport} 
-  variants={slideInY}
+        initial={hiddenVisible.initial}
+        whileInView={hiddenVisible.whileInView}
+        viewport={hiddenVisible.viewport}
+        variants={slideInY}
       >
         {categoriesData.map((category, index) => (
           <TrendingCard

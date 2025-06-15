@@ -3,11 +3,12 @@ import React from "react";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { heroCards } from "./constants";
 import * as motion from "motion/react-client";
-import { slideInLeft } from "../Animations";
+import { slideInLeft } from "@/components/custom/Animations";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-fuchsia-950/20 rounded-md shadow-md" id="/">
+    <section className="bg-fuchsia-950/20 rounded-md shadow-md" id="home"
+    >
       <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-0 2xl:gap-18 gap-6 max-width mx-auto h-full sm:p-8 xs:p-6 p-4 lg:py-3.5 xl:py-6">
         <motion.div
         className="flex-gap-4 flex-col justify-center max-w-[450px] 2xl:max-w-full"
@@ -19,13 +20,14 @@ const Hero: React.FC = () => {
             <div className="h-3 w-3 bg-action-primary rounded-full" />
             Collect NFTs
           </div>
-          <h1 className="2xl:text-6xl md:text-4xl xs:text-2xl text-xl text-fg-primary font-semibold leading-relaxed md:leading-snug  capitalize xl:leading-tight">
-            <span className="fuchsia-to-pink-red-gradient bg-clip-text text-transparent mr-4">
+          <h1 className="2xl:text-6xl md:text-4xl xs:text-2xl text-xl text-fg-primary font-semibold leading-relaxed md:leading-snug  capitalize xl:leading-tight max-w-xs 2xl:max-w-md">
+            <span className="fuchsia-to-pink-red-gradient bg-clip-text text-transparent mr-4 whitespace-nowrap">
               Discover & collect
             </span>
+            <br />
             The best NFTs digital art
           </h1>
-          <h3 className="xl:text-xl text-fg-primary text-sm xs:text-base  sm:max-w-xs max-w-[300px] xl:max-w-[380px] 2xl:max-w-xl  leading-loose lg:mb-1">
+          <h3 className="xl:text-xl text-fg-primary text-sm xs:text-base  sm:max-w-xs max-w-[300px] xl:max-w-[380px] 2xl:max-w-lg  leading-loose lg:mb-1">
             We are a leading marketplace focused on connecting NFT artists with
             their fans and collectors of unique digital assets !
           </h3>

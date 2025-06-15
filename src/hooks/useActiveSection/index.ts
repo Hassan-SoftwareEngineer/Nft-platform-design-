@@ -10,8 +10,8 @@ export const useActiveSection = (sectionIds : string []) => {
         }
       });
     }, {
-      rootMargin: '-50% 0px -50% 0px',
-      threshold: 0.1,
+//  rootMargin: '-10% 0px -50% 0px',
+threshold: 0.3,
     });
     sectionIds.forEach((id) => {
       const element = document.getElementById(id);
