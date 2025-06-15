@@ -23,6 +23,7 @@ const Footer: React.FC = () => {
               src={logo}
               alt="logo"
               className="md:w-16 md:h-12 h-10 w-12  object-cover"
+              priority
             />
             <h1 className="text-2xl md:text-3xl font-bold"> TokenVault </h1>
           </Link>

@@ -1,4 +1,4 @@
-import { FaqsProps } from "@/sections/faqs/types";
+import { FaqsProps } from "@/sections/Faqs/types";
 import React from "react";
 import {
   Accordion,

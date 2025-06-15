@@ -17,14 +17,14 @@ const TopSellerCard : React.FC <TopSellerCardProps>= ({
             {
                 topNfts.map((nft, index) => (
                     <div className='relative h-28 w-full rounded-md' key={index}>
-                <Image src={nft} alt={username} fill className='bg-cover rounded-md' />
+                <Image src={nft} alt={username} fill className='bg-cover rounded-md' sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
                 ))
             }
         </div>
         <div className='flex-between-center'>
             <div className='relative h-12 w-12 mt-0.5'>
-                          <Image src={userProfile} className='bg-cover object-center rounded-full' fill alt={username} />
+                          <Image src={userProfile} className='bg-cover object-center rounded-full' fill alt={username} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  />
                        </div>
 <h1 className='opacity-50 text-4xl font-bold'>
 0

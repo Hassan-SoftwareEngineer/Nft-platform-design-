@@ -1,9 +1,9 @@
 import Hero from "@/sections/Hero";
-import Categories from "../sections/categories";
-import Sellers from "../sections/sellers";
-import Showcase from "../sections/showcase";
-import Faqs from "../sections/faqs";
-import Blog from "../sections/blogs";
+import Categories from "../sections/Categories";
+import Sellers from "../sections/Sellers";
+import Showcase from "../sections/Showcase";
+import Faqs from "../sections/Faqs";
+import Blog from "../sections/Blogs";
 
 export default function Home() {
   return (

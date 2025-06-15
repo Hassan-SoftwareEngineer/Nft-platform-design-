@@ -19,6 +19,7 @@ const BlogCard : React.FC <BlogCardProps> = ({
     className="absolute inset-0 w-full h-full object-cover 
     ease-transition group-hover:scale-105"
     fill
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
   />
             <div className='absolute inset-0 bg-surface-accent/60' />
             <div className='absolute inset-0 z-10 flex flex-col justify-end gap-2 lg:p-6 p-4'>

@@ -63,6 +63,7 @@ const Hero: React.FC = () => {
                 src={card.image}
                 alt={card.alt}
                 className={`w-full rounded-lg md:h-60 h-full ${card.bgColor}`}
+                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             ))}
           </div>
@@ -73,6 +74,7 @@ const Hero: React.FC = () => {
                 src={card.image}
                 alt={card.alt}
                 className={`w-full rounded-lg md:h-60 h-full ${card.bgColor}`}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             ))}
           </div>

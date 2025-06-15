@@ -48,7 +48,7 @@ const Header: React.FC = () => {
       />
       <div className="flex-between-center flex-col xl:flex-row p-4 xl:py-2.5 md:px-6 max-w-7xl mx-auto">
         <Link className="gap-2 md:gap-1.5 flex items-center max-xl:self-start" href="/">
-          <Image src={logo} alt="logo" className="md:h-16 h-10 w-full" />
+          <Image src={logo} alt="logo" className="md:h-16 h-10 w-full" priority />
           <h1 className="sm:text-3xl text-xl font-semibold text-fg-primary whitespace-nowrap">
             TokenVault 
           </h1>

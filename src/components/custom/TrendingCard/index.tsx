@@ -31,6 +31,7 @@ const TrendingCard : React.FC <TrendingCardProps> = ({
     alt={nftName}
     fill
     className='object-cover object-center rounded-md'
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
   />
   {
     placeBid && (
@@ -62,7 +63,7 @@ const TrendingCard : React.FC <TrendingCardProps> = ({
         <div className='flex-between-center py-3 px-1'>
           <div className='flex-center gap-3'>
             <div className='relative h-10 w-10'>
-               <Image src={userProfile} className='bg-cover bg-center rounded-full' fill alt={username} />
+               <Image src={userProfile} className='bg-cover bg-center rounded-full' fill alt={username} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
             </div>
 <div>
   <h2 className='font-semibold'>  @{username} </h2>
