@@ -108,14 +108,14 @@ function AccordionItem({ value, children, className }: AccordionItemProps) {
   const isExpanded = value === expandedValue;
 
   return (
-    <div
+   <div
       className={cn('overflow-hidden', className)}
-      {...(isExpanded ? { 'data-expanded': '' } : {'data-closed': ''})}
+      {...(isExpanded ? { 'data-expanded': '' } : { 'data-closed': '' })}
     >
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
-          return React.cloneElement(child, {
-            ...child.props,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          return React.cloneElement(child as React.ReactElement<any>, {
             value,
             expanded: isExpanded,
           });
