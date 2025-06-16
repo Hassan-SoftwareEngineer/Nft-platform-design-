@@ -1,3 +1,5 @@
+const easeOut: [number, number, number, number] = [0, 0, 0.2, 1];
+
 const slideInLeft = {
   initial: {
     opacity: 0,
@@ -6,12 +8,12 @@ const slideInLeft = {
   animate: {
     opacity: 1,
     x: 0,
+    transition: {
+      duration: 0.8,
+      delay: 0.4,
+      ease: easeOut,
+    },
   },
-  transition: {
-    duration: 0.8,
-    delay: 0.4,
-    ease: "easeOut",
-  }
 };
 
 const hiddenVisible = {
@@ -24,7 +26,7 @@ const hiddenVisible = {
 };
 
 const slideInLeftInView = {
-hidden: {
+  hidden: {
     opacity: 0,
     x: -100,
   },
@@ -34,12 +36,10 @@ hidden: {
     transition: {
       duration: 0.7,
       delay: 0.3,
-      ease: "easeOut",
+      ease: easeOut,
     },
   },
-}
-
-
+};
 
 const slideInY = {
   hidden: {
@@ -52,14 +52,14 @@ const slideInY = {
     transition: {
       duration: 0.7,
       delay: 0.3,
-      ease: "easeOut",
-    }
-  }
+      ease: easeOut,
+    },
+  },
 };
 
 export {
-    slideInLeft,
-    slideInLeftInView,
-    slideInY,
-    hiddenVisible
-}
+  slideInLeft,
+  slideInLeftInView,
+  slideInY,
+  hiddenVisible,
+};
