@@ -4,7 +4,7 @@ import BlogCard from "@/components/custom/BlogCard";
 import * as motion from "motion/react-client";
 import { hiddenVisible, slideInLeftInView } from "@/components/custom/Animations";
 
-const Blog = () => {
+const Blogs = () => {
   return (
     <section className="section" id="blogs">
         <SeeMore
@@ -36,4 +36,4 @@ const Blog = () => {
   )
 }
 
-export default Blog;
+export default Blogs;

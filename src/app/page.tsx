@@ -3,7 +3,7 @@ import Categories from "../sections/Categories";
 import Sellers from "../sections/Sellers";
 import Showcase from "../sections/Showcase";
 import Faqs from "../sections/Faqs";
-import Blog from "../sections/Blogs";
+import Blogs from "../sections/Blogs";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Sellers />
       <Showcase />
       <Faqs />
-      <Blog />
+      <Blogs />
     </>
   );
 }
